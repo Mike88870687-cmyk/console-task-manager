@@ -10,9 +10,9 @@ Features:
 
 How to run:
 
-- Clone the repository
-- Open the project in Intellij IDEA
-- Run `Main.java`
+1. Clone the repository
+2. Open the project in Intellij IDEA
+3. Run `Main.java`
 
 Project purpose This project was created as a learning exercise to practice:
 
