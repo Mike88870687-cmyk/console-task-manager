@@ -4,28 +4,27 @@ Simple Java console application for managing tasks.
 
 Features:
 
-    Add task
-    Show tasks
-    Delete task
+- Add task
+- Show tasks
+- Delete task
 
 How to run:
 
-    Clone the repository
-    Open the project in Intellij IDEA
-    Run Main.java
+- Clone the repository
+- Open the project in Intellij IDEA
+- Run `Main.java`
 
 Project purpose This project was created as a learning exercise to practice:
 
-    Java basics
-    Arrays and loops
-    Methods and refactoring
-    Console input/output
-    Git and GitHub workflow
+- Java basics
+- Arrays and loops
+- Methods and refactoring
+- Console input/output
+- Git and GitHub workflow
 
 Tech stack:
-
-    Java
-    Console application
+- Java
+- Console application
 
 Status:
 
