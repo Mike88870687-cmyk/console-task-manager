@@ -28,5 +28,5 @@ Tech stack:
 
 Status:
 
-    In progress
+- In progress
 
