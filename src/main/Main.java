@@ -1,10 +1,12 @@
-import javax.sound.sampled.Line;
+package main;
+
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
-        String[] tasks = new String[100];
+        Task[] tasks = new Task[100];
         int taskCount = 0;
         while (true) {
             printMenu();
@@ -38,26 +40,27 @@ public class Main {
         System.out.println("0 - Exit");
     }
 
-    static int addTask(Scanner scanner, String[] tasks, int taskCount){
+    static int addTask(Scanner scanner, Task[] tasks, int taskCount){
         System.out.println("Please add a task");
         String taskText = scanner.nextLine();
-        tasks[taskCount] = taskText;
+        tasks[taskCount] = new Task();
+        tasks[taskCount].text = taskText;
         taskCount++;
         System.out.println("Task added");
         return taskCount;
     }
 
-    static void showTasks(String[] tasks, int taskCount){
+    static void showTasks(Task[] tasks, int taskCount){
         if(taskCount == 0) {
             System.out.println("No task");
         }else{
             for(int i = 0; i < taskCount; i++){
-                System.out.println((i+1) + ". " + tasks[i]);
+                System.out.println(tasks[i].text);
             }
         }
     }
 
-    static int deleteTask(Scanner scanner, String[] tasks, int taskCount){
+    static int deleteTask(Scanner scanner, Task[] tasks, int taskCount){
         if(taskCount == 0) {
             System.out.println("No task to delete");
         }
